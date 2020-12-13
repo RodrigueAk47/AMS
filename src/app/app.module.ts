@@ -6,22 +6,21 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AcceuilComponent } from './acceuil/acceuil.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { ParametreComponent } from './parametre/parametre.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AcceuilComponent,
-    HeaderComponent,
-    FooterComponent,
+    ParametreComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
