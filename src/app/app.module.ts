@@ -5,20 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { AcceuilComponent } from './acceuil/acceuil.component';
-import { ParametreComponent } from './parametre/parametre.component';
-import { TelechargementComponent } from './telechargement/telechargement.component';
-import { FormationComponent } from './formation/formation.component';
+import { AccueilComponent } from './client/accueil/accueil.component';
+import { TelechargementComponent } from './client/telechargement/telechargement.component';
+import { FormationComponent } from './client/formation/formation.component';
+import { ParametreComponent } from './client/parametre/parametre.component';
+import { RegisterComponent } from './authentification/register/register.component';
+import { LoginComponent } from './authentification/login/login.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AcceuilComponent,
-    ParametreComponent,
+    AccueilComponent,
     TelechargementComponent,
     FormationComponent,
+    ParametreComponent,
+    RegisterComponent,
+    LoginComponent,
+  
 
 
   ],

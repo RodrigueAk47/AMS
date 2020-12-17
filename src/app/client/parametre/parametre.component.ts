@@ -11,8 +11,5 @@ export class ParametreComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  title = 'Parametre';
+
 }
-
-
-

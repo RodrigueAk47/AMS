@@ -3,3 +3,4 @@
 [1213/202502.903:ERROR:settings.cc(320)] Settings magic is not 1129342067
 [1213/203503.255:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
 [1213/203707.357:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[1217/191340.420:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
