@@ -11,6 +11,7 @@ import { FormationComponent } from './client/formation/formation.component';
 import { ParametreComponent } from './client/parametre/parametre.component';
 import { RegisterComponent } from './authentification/register/register.component';
 import { LoginComponent } from './authentification/login/login.component';
+import { ContactComponent } from './client/contact/contact.component';
 
 
 
@@ -23,6 +24,7 @@ import { LoginComponent } from './authentification/login/login.component';
     ParametreComponent,
     RegisterComponent,
     LoginComponent,
+    ContactComponent,
   
 
 
