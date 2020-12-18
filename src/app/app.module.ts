@@ -12,6 +12,9 @@ import { ParametreComponent } from './client/parametre/parametre.component';
 import { RegisterComponent } from './authentification/register/register.component';
 import { LoginComponent } from './authentification/login/login.component';
 import { ContactComponent } from './client/contact/contact.component';
+import { SageComptabiliteComponent } from './client/telechargement/sage-comptabilite/sage-comptabilite.component';
+import { SageGestionCommercialeComponent } from './client/telechargement/sage-gestion-commerciale/sage-gestion-commerciale.component';
+import { SagePaieComponent } from './client/telechargement/sage-paie/sage-paie.component';
 
 
 
@@ -25,6 +28,9 @@ import { ContactComponent } from './client/contact/contact.component';
     RegisterComponent,
     LoginComponent,
     ContactComponent,
+    SageComptabiliteComponent,
+    SageGestionCommercialeComponent,
+    SagePaieComponent,
   
 
 
