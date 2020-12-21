@@ -15,6 +15,7 @@ import { ContactComponent } from './client/contact/contact.component';
 import { SageComptabiliteComponent } from './client/telechargement/sage-comptabilite/sage-comptabilite.component';
 import { SageGestionCommercialeComponent } from './client/telechargement/sage-gestion-commerciale/sage-gestion-commerciale.component';
 import { SagePaieComponent } from './client/telechargement/sage-paie/sage-paie.component';
+import { FormationSageComptabiliteComponent } from './client/formation/formation-sage-comptabilite/formation-sage-comptabilite.component';
 
 
 
@@ -31,6 +32,7 @@ import { SagePaieComponent } from './client/telechargement/sage-paie/sage-paie.c
     SageComptabiliteComponent,
     SageGestionCommercialeComponent,
     SagePaieComponent,
+    FormationSageComptabiliteComponent,
   
 
 

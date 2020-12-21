@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <title>AMS</title>
   <base href="/">
-
+  <meta name="description" content="AMS est une site de telechargement et de formation video">
   <link rel="icon"  type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,13 +14,38 @@
   <link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fonts/css/fontawesome-all.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/app/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+  <meta name="google-site-verification" content="of4tGSMk5UxrK99s5KLT6Ogh5PwEhxSZUXYpMefxVes" />
 </head>
 <body class="theme-light" data-highlight="blue2">
   <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
   <div id="page">
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDH5BrfJ3XexfWTqyLkHENeGSEsSncupyM",
+    authDomain: "ams-stefy.firebaseapp.com",
+    databaseURL: "https://ams-stefy-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "ams-stefy",
+    storageBucket: "ams-stefy.appspot.com",
+    messagingSenderId: "638067250330",
+    appId: "1:638067250330:web:0f3ffa1cd7c0a44e427b23",
+    measurementId: "G-MG6VWBMN6B"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script type="text/javascript" src="assets/scripts/jquery.js"></script>
 <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/scripts/custom.js"></script>

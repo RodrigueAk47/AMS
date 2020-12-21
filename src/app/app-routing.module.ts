@@ -1,3 +1,4 @@
+import { FormationComponent } from './client/formation/formation.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 import { RegisterComponent } from './authentification/register/register.component';
@@ -16,11 +17,12 @@ const routes: Routes = [
   {path: 'parametre', component: ParametreComponent},
   {path: 'telechargement', component: TelechargementComponent},
   {path: 'inscription', component: RegisterComponent},
-  {path: 'a-propos', component: ContactComponent},
+  {path: 'contact', component: ContactComponent},
   {path: 'inscription', component: RegisterComponent},
   {path: 'telechargement/sage-comptabilite', component: SageComptabiliteComponent},
   {path: 'telechargement/sage-gestion-commerciale', component: SageGestionCommercialeComponent},
   {path: 'telechargement/sage-paie', component: SagePaieComponent},
+  {path: 'formation', component: FormationComponent},
 ];
 
 @NgModule({
