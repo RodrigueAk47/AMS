@@ -45,3 +45,7 @@ testem.log
 .DS_Store
 Thumbs.db
 debug.log
+database-debug.log
+firestore-debug.log
+pubsub-debug.log
+ui-debug.log
