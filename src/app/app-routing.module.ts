@@ -1,3 +1,4 @@
+import { FormationSageComptabiliteComponent } from './client/formation/formation-sage-comptabilite/formation-sage-comptabilite.component';
 import { FormationComponent } from './client/formation/formation.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'telechargement/sage-gestion-commerciale', component: SageGestionCommercialeComponent},
   {path: 'telechargement/sage-paie', component: SagePaieComponent},
   {path: 'formation', component: FormationComponent},
+  {path: 'formation/sage-comptabilite', component:FormationSageComptabiliteComponent}
 ];
 
 @NgModule({
