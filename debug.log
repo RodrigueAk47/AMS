@@ -8,3 +8,4 @@
 [1218/121016.336:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
 [1219/132531.896:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
 [1220/090822.751:ERROR:process_info.cc(359)] UncheckedAllocate
+[1222/180412.470:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)

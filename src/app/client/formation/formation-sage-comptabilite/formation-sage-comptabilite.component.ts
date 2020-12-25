@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formation-sage-comptabilite.component.css']
 })
 export class FormationSageComptabiliteComponent implements OnInit {
-
+  div = "</div>"
   constructor() { }
 
   ngOnInit(): void {

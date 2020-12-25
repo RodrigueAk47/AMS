@@ -18,6 +18,7 @@ export class SageGestionCommercialeComponent implements OnInit {
   lien = "https://proud-morning-a1e4.rodrigueassohou.workers.dev/Logiciels/Sage.100.Gestion.Commerciale.i7.v8.50.Incl.Keygen.Multilingual-NGEN.rar?rootId=0ABWapVYci3JeUk9PVA";
   commentaire = "merci";
   commentateur = "Gohi Jean";
+  div = "</div>"
   ngOnInit(): void {
   }
 

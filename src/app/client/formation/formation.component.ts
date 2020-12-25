@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formation.component.css']
 })
 export class FormationComponent implements OnInit {
-
+  div = "</div>"
   constructor() { }
 
   ngOnInit(): void {

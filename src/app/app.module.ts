@@ -1,5 +1,7 @@
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFireModule} from '@angular/fire';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +18,12 @@ import { SageComptabiliteComponent } from './client/telechargement/sage-comptabi
 import { SageGestionCommercialeComponent } from './client/telechargement/sage-gestion-commerciale/sage-gestion-commerciale.component';
 import { SagePaieComponent } from './client/telechargement/sage-paie/sage-paie.component';
 import { FormationSageComptabiliteComponent } from './client/formation/formation-sage-comptabilite/formation-sage-comptabilite.component';
-
+import { CodeComponent } from './client/formation/formation-sage-comptabilite/backend/code/code.component';
+import { ErreurComponent } from './client/erreur/erreur.component';
+import { CookieService } from 'ngx-cookie-service';
+import { BienvenueComponent } from './bienvenue/bienvenue.component';;
+import { FormsModule} from '@angular/forms';
+import { PhotoshopComponent } from './client/telechargement/adobe/photoshop/photoshop.component';
 
 
 @NgModule({
@@ -33,17 +40,26 @@ import { FormationSageComptabiliteComponent } from './client/formation/formation
     SageGestionCommercialeComponent,
     SagePaieComponent,
     FormationSageComptabiliteComponent,
-  
+    CodeComponent,
+    ErreurComponent,
+    BienvenueComponent,
+    PhotoshopComponent,
+
 
 
   ],
+
+
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    FormsModule,
+    AngularFireAuthModule,
+    AngularFireModule,
 
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

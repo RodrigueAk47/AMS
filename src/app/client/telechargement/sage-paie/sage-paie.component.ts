@@ -18,6 +18,7 @@ export class SagePaieComponent implements OnInit {
   lien = "";
   commentaire = "Fantastique";
   commentateur = "Michel";
+  div = "</div>"
   ngOnInit(): void {
   }
 

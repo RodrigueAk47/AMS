@@ -1,3 +1,6 @@
+import { PhotoshopComponent } from './client/telechargement/adobe/photoshop/photoshop.component';
+import { LoginComponent } from './authentification/login/login.component';
+import { ErreurComponent } from './client/erreur/erreur.component';
 import { FormationSageComptabiliteComponent } from './client/formation/formation-sage-comptabilite/formation-sage-comptabilite.component';
 import { FormationComponent } from './client/formation/formation.component';
 import { NgModule } from '@angular/core';
@@ -10,6 +13,7 @@ import { SageComptabiliteComponent } from './client/telechargement/sage-comptabi
 import { SageGestionCommercialeComponent } from './client/telechargement/sage-gestion-commerciale/sage-gestion-commerciale.component';
 import { SagePaieComponent } from './client/telechargement/sage-paie/sage-paie.component';
 import { TelechargementComponent } from './client/telechargement/telechargement.component';
+import { BienvenueComponent } from './bienvenue/bienvenue.component';
 
 
 
@@ -24,7 +28,12 @@ const routes: Routes = [
   {path: 'telechargement/sage-gestion-commerciale', component: SageGestionCommercialeComponent},
   {path: 'telechargement/sage-paie', component: SagePaieComponent},
   {path: 'formation', component: FormationComponent},
-  {path: 'formation/sage-comptabilite', component:FormationSageComptabiliteComponent}
+  {path: 'connexion', component: LoginComponent},
+  {path: 'formation/sage-comptabilite', component:FormationSageComptabiliteComponent},
+  {path: 'bienvenue', component: BienvenueComponent},
+  {path: 'telechargement/photoshop', component: PhotoshopComponent},
+  {path: '**', component: ErreurComponent},
+
 ];
 
 @NgModule({

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./telechargement.component.css']
 })
 export class TelechargementComponent implements OnInit {
-
+  div = "</div>"
   constructor() { }
 
   ngOnInit(): void {

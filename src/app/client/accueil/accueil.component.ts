@@ -1,3 +1,4 @@
+import { CookieService } from 'ngx-cookie-service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements OnInit {
+  cookieValue: string;
+  div = "</div>"
+  constructor( private cookieService: CookieService ) {
 
-  constructor() { }
+
+  }
 
   ngOnInit(): void {
   }

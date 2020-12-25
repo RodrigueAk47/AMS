@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ams-stefy"
+  },
+  "targets": {
+    "ams-stefy": {
+      "hosting": {
+        "AMS": [
+          "ams-stefy"
+        ]
+      }
+    }
   }
 }

@@ -7,6 +7,7 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  div = "</div>"
   title = 'AMS';
 }
 

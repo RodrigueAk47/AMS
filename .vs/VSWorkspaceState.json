@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\client",
+    "\\src\\app\\client\\formation",
+    "\\src\\app\\client\\formation\\formation-sage-comptabilite"
+  ],
+  "SelectedNode": "\\src\\app\\client\\formation\\formation-sage-comptabilite\\formation-sage-comptabilite.component.html",
+  "PreviewInSolutionExplorer": false
+}
