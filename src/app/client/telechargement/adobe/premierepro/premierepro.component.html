@@ -1,0 +1,116 @@
+<div class="header header-fixed header-auto-show header-logo-app">
+  <a href="#0" class="header-title">AMS</a>
+  <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+  <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+  <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
+  <a href="#" data-menu="menu-highlights" class="header-icon header-icon-3"><i class="fas fa-brush"></i></a>
+  </div>
+  <div id="footer-bar" class="footer-bar-5">
+    <a href="a-propos"><i data-feather="phone" data-feather-line="1" data-feather-size="21" data-feather-color="red2-dark" data-feather-bg="red2-fade-light"></i><span>Contact</span></a>
+    <a href="/telechargement" class="active-nav"><i data-feather="download" data-feather-line="1" data-feather-size="21" data-feather-color="green1-dark" data-feather-bg="green1-fade-light"></i><span>Telechargement</span></a>
+    <a href="/" ><i data-feather="home" data-feather-line="1" data-feather-size="21" data-feather-color="blue2-dark" data-feather-bg="blue2-fade-light"></i><span>Accueil</span></a>
+    <a href="/formation"><i data-feather="youtube" data-feather-line="1" data-feather-size="21" data-feather-color="brown1-dark" data-feather-bg="brown1-fade-light"></i><span>Formation</span></a>
+    <a href="/parametre" ><i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="gray2-dark" data-feather-bg="gray2-fade-light"></i><span>Paramètre</span></a>
+    </div>
+    <div class="page-content">
+      <div class="page-title page-title-small">
+      <h2><a href="/telechargement"><i class="fa fa-arrow-left"></i></a>{{title}}</h2>
+      <a href="#" data-menu="menu-main" class="bg-fade-gray1-dark shadow-xl preload-img" data-src="assets/images/avatars/5s.png"></a>
+      </div>
+      <div class="card header-card shape-rounded" data-card-height="150">
+        <div class="card-overlay bg-highlight opacity-95"></div>
+        <div class="card-overlay dark-mode-tint"></div>
+        <div class="card-bg preload-img" data-src="assets/images/pictures/20s.png"></div>
+        </div>
+        <div class="single-slider-boxed text-center owl-no-dots owl-carousel">
+        <div class="card rounded-l shadow-l" data-card-height="320">
+        <div class="card-bottom">
+  <h1 class="font-24 font-700">{{title}}</h1>
+  </div>
+   <div class="card-overlay bg-gradient-fade"></div>
+  <div class="card-bg owl-lazy" data-src="assets/images/premierepro.jpg"></div>
+</div>
+
+  </div>
+
+  <div class="card card-style">
+  <div class="content">
+  <h3>A propos de {{title}}</h3>
+  <p>
+   {{apropos}}
+  </p>
+  <div class="row">
+  <div class="col-4">
+  <p class="font-600 color-theme">Version</p>
+  </div>
+  <div class="col-8">
+  <p>{{version}}</p>
+  </div>
+  <div class="mb-3 w-100"></div>
+  <div class="col-4">
+  <p class="font-600 color-theme">Taille</p>
+  </div>
+  <div class="col-8">
+  <p>{{taille}}</p>
+  </div>
+  <div class="mb-3 w-100"></div>
+  <div class="col-4">
+  <p class="font-600 color-theme">Langue</p>
+  </div>
+  <div class="col-8">
+  <p>{{langue}}</p>
+  </div>
+  </div>
+
+  <a href="{{lien}}" class="btn btn-full bg-green1-dark btn-l rounded-sm text-uppercase font-800"><i class="fa fa-download pr-3"></i>Telecharger maintenant</a>
+  </div>
+  </div>
+  <div class="card card-style">
+  <div class="content">
+  <h3>Capture d'ecran</h3>
+
+  </div>
+  <div class="content">
+  <div class="row text-center row-cols-3 mb-0">
+  <a class="col" data-lightbox="gallery-1" href="{{capture1}}" title="Capture d'ecran de {{title}}">
+  <img src="images/empty.png" data-src="{{capture1}}" class="preload-img img-fluid rounded-xs" alt="img">
+
+  </a>
+  <a class="col" data-lightbox="gallery-1" href="{{capture2}}" title="Capture d'ecran de {{title}}">
+  <img src="images/empty.png" data-src="{{capture2}}" class="preload-img img-fluid rounded-xs" alt="img">
+
+  </a>
+
+  </div>
+  </div>
+  </div>
+  <div class="card card-style">
+  <div class="content">
+  <h3>Commentaire</h3>
+  </div>
+  <div class="divider divider-margins"></div>
+  <div class="content mt-0">
+  <h1 class="mb-n2 font-15 font-700">{{commentateur}}</h1>
+  <h1 class="float-right font-700 font-30 mt-n3">5.00</h1>
+  <p class="mb-2 font-10"><i class="fa fa-check-circle color-highlight scale-icon mr-2"></i>Telechargement verifié</p>
+  <p>
+  {{commentaire}}
+  </p>
+  </div>
+
+
+
+  </div>
+
+
+
+<div class="footer" data-menu-load="assets/menu-footer.html"></div>
+</div>
+
+<div id="menu-share" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-load="assets/menu-share.html" data-menu-height="420" data-menu-effect="menu-over">
+</div>
+<div id="menu-highlights" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-load="assets/menu-colors.html" data-menu-height="510" data-menu-effect="menu-over">
+</div>
+<div id="menu-main" class="menu menu-box-right menu-box-detached rounded-m" data-menu-width="260" data-menu-load="assets/menu-main.html" data-menu-active="nav-settings" data-menu-effect="menu-over">
+</div>
+{{div}}

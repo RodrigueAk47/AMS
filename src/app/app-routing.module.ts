@@ -1,3 +1,7 @@
+import { AdobeComponent } from './client/telechargement/categories/adobe/adobe.component';
+import { AnimateComponent } from './client/telechargement/adobe/animate/animate.component';
+import { AcrobatComponent } from './client/telechargement/adobe/acrobat/acrobat.component';
+import { PremiereproComponent } from './client/telechargement/adobe/premierepro/premierepro.component';
 import { PhotoshopComponent } from './client/telechargement/adobe/photoshop/photoshop.component';
 import { LoginComponent } from './authentification/login/login.component';
 import { ErreurComponent } from './client/erreur/erreur.component';
@@ -32,6 +36,10 @@ const routes: Routes = [
   {path: 'formation/sage-comptabilite', component:FormationSageComptabiliteComponent},
   {path: 'bienvenue', component: BienvenueComponent},
   {path: 'telechargement/photoshop', component: PhotoshopComponent},
+  {path: 'telechargement/premierepro', component: PremiereproComponent},
+  {path: 'telechargement/acrobat', component: AcrobatComponent},
+  {path: 'telechargement/animate', component: AnimateComponent},
+  {path: 'telechargement/categories/adobe', component: AdobeComponent},
   {path: '**', component: ErreurComponent},
 
 ];

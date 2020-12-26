@@ -24,6 +24,10 @@ import { CookieService } from 'ngx-cookie-service';
 import { BienvenueComponent } from './bienvenue/bienvenue.component';;
 import { FormsModule} from '@angular/forms';
 import { PhotoshopComponent } from './client/telechargement/adobe/photoshop/photoshop.component';
+import { PremiereproComponent } from './client/telechargement/adobe/premierepro/premierepro.component';
+import { AcrobatComponent } from './client/telechargement/adobe/acrobat/acrobat.component';
+import { AnimateComponent } from './client/telechargement/adobe/animate/animate.component';
+import { AdobeComponent } from './client/telechargement/categories/adobe/adobe.component';
 
 
 @NgModule({
@@ -44,6 +48,10 @@ import { PhotoshopComponent } from './client/telechargement/adobe/photoshop/phot
     ErreurComponent,
     BienvenueComponent,
     PhotoshopComponent,
+    PremiereproComponent,
+    AcrobatComponent,
+    AnimateComponent,
+    AdobeComponent,
 
 
 
