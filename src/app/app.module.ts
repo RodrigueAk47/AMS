@@ -1,3 +1,5 @@
+import { AuthGuardService } from './services/auth-guard.service';
+import { AuthentificationService } from './services/authentification.service';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,8 +13,6 @@ import { AccueilComponent } from './client/accueil/accueil.component';
 import { TelechargementComponent } from './client/telechargement/telechargement.component';
 import { FormationComponent } from './client/formation/formation.component';
 import { ParametreComponent } from './client/parametre/parametre.component';
-import { RegisterComponent } from './authentification/register/register.component';
-import { LoginComponent } from './authentification/login/login.component';
 import { ContactComponent } from './client/contact/contact.component';
 import { SageComptabiliteComponent } from './client/telechargement/sage-comptabilite/sage-comptabilite.component';
 import { SageGestionCommercialeComponent } from './client/telechargement/sage-gestion-commerciale/sage-gestion-commerciale.component';
@@ -21,13 +21,15 @@ import { FormationSageComptabiliteComponent } from './client/formation/formation
 import { CodeComponent } from './client/formation/formation-sage-comptabilite/backend/code/code.component';
 import { ErreurComponent } from './client/erreur/erreur.component';
 import { CookieService } from 'ngx-cookie-service';
-import { BienvenueComponent } from './bienvenue/bienvenue.component';;
-import { FormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PhotoshopComponent } from './client/telechargement/adobe/photoshop/photoshop.component';
 import { PremiereproComponent } from './client/telechargement/adobe/premierepro/premierepro.component';
 import { AcrobatComponent } from './client/telechargement/adobe/acrobat/acrobat.component';
 import { AnimateComponent } from './client/telechargement/adobe/animate/animate.component';
 import { AdobeComponent } from './client/telechargement/categories/adobe/adobe.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -37,8 +39,6 @@ import { AdobeComponent } from './client/telechargement/categories/adobe/adobe.c
     TelechargementComponent,
     FormationComponent,
     ParametreComponent,
-    RegisterComponent,
-    LoginComponent,
     ContactComponent,
     SageComptabiliteComponent,
     SageGestionCommercialeComponent,
@@ -46,12 +46,13 @@ import { AdobeComponent } from './client/telechargement/categories/adobe/adobe.c
     FormationSageComptabiliteComponent,
     CodeComponent,
     ErreurComponent,
-    BienvenueComponent,
     PhotoshopComponent,
     PremiereproComponent,
     AcrobatComponent,
     AnimateComponent,
     AdobeComponent,
+    SignupComponent,
+    SigninComponent,
 
 
 
@@ -65,9 +66,14 @@ import { AdobeComponent } from './client/telechargement/categories/adobe/adobe.c
     FormsModule,
     AngularFireAuthModule,
     AngularFireModule,
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
-  providers: [CookieService],
+  providers: [
+    CookieService,
+    AuthentificationService,
+    AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
