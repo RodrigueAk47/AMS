@@ -9,7 +9,7 @@ import { ErreurComponent } from './client/erreur/erreur.component';
 import { FormationSageComptabiliteComponent } from './client/formation/formation-sage-comptabilite/formation-sage-comptabilite.component';
 import { FormationComponent } from './client/formation/formation.component';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule} from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules, PreloadingStrategy} from '@angular/router';
 
 import { AccueilComponent } from './client/accueil/accueil.component';
 import { ContactComponent } from './client/contact/contact.component';
@@ -48,7 +48,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)],
+    RouterModule.forRoot(routes,
+     {preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
