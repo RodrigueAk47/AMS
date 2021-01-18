@@ -19,6 +19,14 @@ import { SageGestionCommercialeComponent } from './client/telechargement/sage-ge
 import { SagePaieComponent } from './client/telechargement/sage-paie/sage-paie.component';
 import { TelechargementComponent } from './client/telechargement/telechargement.component';
 import { SignupComponent } from './auth/signup/signup.component';
+import { Categorie1Component } from './client/formation/formation-sage-comptabilite/categorie1/categorie1.component';
+import { Categorie2Component } from './client/formation/formation-sage-comptabilite/categorie2/categorie2.component';
+import { Categorie4Component } from './client/formation/formation-sage-comptabilite/categorie4/categorie4.component';
+import { Categorie5Component } from './client/formation/formation-sage-comptabilite/categorie5/categorie5.component';
+import { Categorie3Component } from './client/formation/formation-sage-comptabilite/categorie3/categorie3.component';
+import { Categorie6Component } from './client/formation/formation-sage-comptabilite/categorie6/categorie6.component';
+import { Categorie7Component } from './client/formation/formation-sage-comptabilite/categorie7/categorie7.component';
+import { Categorie8Component } from './client/formation/formation-sage-comptabilite/categorie8/categorie8.component';
 
 
 
@@ -40,6 +48,15 @@ const routes: Routes = [
   {path: 'telechargement/acrobat', component: AcrobatComponent},
   {path: 'telechargement/animate', component: AnimateComponent},
   {path: 'telechargement/categories/adobe', component: AdobeComponent},
+  {path: 'formation/sage-comptabilite/1', component: Categorie1Component},
+  {path: 'formation/sage-comptabilite/2', component: Categorie2Component},
+  {path: 'formation/sage-comptabilite/3', component: Categorie3Component},
+  {path: 'formation/sage-comptabilite/4', component: Categorie4Component},
+  {path: 'formation/sage-comptabilite/5', component: Categorie5Component},
+  {path: 'formation/sage-comptabilite/6', component: Categorie6Component},
+  {path: 'formation/sage-comptabilite/7', component: Categorie7Component},
+  {path: 'formation/sage-comptabilite/8', component: Categorie8Component},
+
   {path: '**', component: ErreurComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'signin', component: SigninComponent},
@@ -48,8 +65,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes,
-     {preloadingStrategy: PreloadAllModules})],
+    RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

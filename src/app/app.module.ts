@@ -30,6 +30,14 @@ import { AdobeComponent } from './client/telechargement/categories/adobe/adobe.c
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { HttpClientModule} from '@angular/common/http';
+import { Categorie1Component } from './client/formation/formation-sage-comptabilite/categorie1/categorie1.component';
+import { Categorie2Component } from './client/formation/formation-sage-comptabilite/categorie2/categorie2.component';
+import { Categorie3Component } from './client/formation/formation-sage-comptabilite/categorie3/categorie3.component';
+import { Categorie4Component } from './client/formation/formation-sage-comptabilite/categorie4/categorie4.component';
+import { Categorie5Component } from './client/formation/formation-sage-comptabilite/categorie5/categorie5.component';
+import { Categorie6Component } from './client/formation/formation-sage-comptabilite/categorie6/categorie6.component';
+import { Categorie7Component } from './client/formation/formation-sage-comptabilite/categorie7/categorie7.component';
+import { Categorie8Component } from './client/formation/formation-sage-comptabilite/categorie8/categorie8.component';
 
 
 @NgModule({
@@ -53,6 +61,14 @@ import { HttpClientModule} from '@angular/common/http';
     AdobeComponent,
     SignupComponent,
     SigninComponent,
+    Categorie1Component,
+    Categorie2Component,
+    Categorie3Component,
+    Categorie4Component,
+    Categorie5Component,
+    Categorie6Component,
+    Categorie7Component,
+    Categorie8Component,
 
 
 
