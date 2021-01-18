@@ -9,6 +9,15 @@
 
 # dependencies
 /node_modules
+/.firebase
+/.vs
+/.vscode
+.firebaserc
+firebase.json
+database-debug.log
+debug.log
+firestore-debug.log
+ui-debug.log
 
 # profiling files
 chrome-profiler-events*.json
